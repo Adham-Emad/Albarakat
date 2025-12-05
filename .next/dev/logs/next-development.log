@@ -1,0 +1,44 @@
+[00:00:01.580] Server  LOG     ✓ Ready in 1068ms
+[00:00:17.971] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:17.971] Browser ERROR   `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog
+[00:00:17.971] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:00:17.971] Browser ERROR   `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog
+[00:00:17.971] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:01:14.278] Browser LOG     [v0] Audio panning set to: -1 for left ear, frequency: 250Hz, volume: 0.03162277660168379
+[00:01:14.278] Browser LOG     [v0] Audio panning set to: -1 for left ear, frequency: 250Hz, volume: 0.03162277660168379
+[00:01:15.810] Browser LOG     [v0] Volume updated to: 0.039810717055349734 for frequency: 250Hz
+[00:01:15.976] Browser LOG     [v0] Volume updated to: 0.05011872336272723 for frequency: 250Hz
+[00:01:16.326] Browser LOG     [v0] Volume updated to: 0.06309573444801933 for frequency: 250Hz
+[00:01:16.559] Browser LOG     [v0] Volume updated to: 0.07943282347242814 for frequency: 250Hz
+[00:01:16.693] Browser LOG     [v0] Volume updated to: 0.1 for frequency: 250Hz
+[00:01:16.895] Browser LOG     [v0] Volume updated to: 0.12589254117941676 for frequency: 250Hz
+[00:01:17.063] Browser LOG     [v0] Volume updated to: 0.15848931924611143 for frequency: 250Hz
+[00:01:17.313] Browser LOG     [v0] Volume updated to: 0.1995262314968879 for frequency: 250Hz
+[00:01:19.681] Browser LOG     [v0] Audio panning set to: -1 for left ear, frequency: 500Hz, volume: 0.03162277660168379
+[00:01:20.114] Browser LOG     [v0] Audio panning set to: -1 for left ear, frequency: 1000Hz, volume: 0.03162277660168379
+[00:01:20.448] Browser LOG     [v0] Audio panning set to: -1 for left ear, frequency: 2000Hz, volume: 0.03162277660168379
+[00:01:20.648] Browser LOG     [v0] Audio panning set to: -1 for left ear, frequency: 4000Hz, volume: 0.03162277660168379
+[00:01:20.831] Browser LOG     [v0] Audio panning set to: -1 for left ear, frequency: 8000Hz, volume: 0.03162277660168379
+[00:01:21.498] Browser LOG     [v0] Audio panning set to: 1 for right ear, frequency: 250Hz, volume: 0.03162277660168379
+[00:01:21.498] Browser LOG     [v0] Audio panning set to: 1 for right ear, frequency: 250Hz, volume: 0.03162277660168379
+[00:01:21.781] Browser LOG     [v0] Audio panning set to: 1 for right ear, frequency: 500Hz, volume: 0.03162277660168379
+[00:01:22.030] Browser LOG     [v0] Audio panning set to: 1 for right ear, frequency: 1000Hz, volume: 0.03162277660168379
+[00:01:22.231] Browser LOG     [v0] Audio panning set to: 1 for right ear, frequency: 2000Hz, volume: 0.03162277660168379
+[00:01:22.381] Browser LOG     [v0] Audio panning set to: 1 for right ear, frequency: 4000Hz, volume: 0.03162277660168379
+[00:01:22.616] Browser LOG     [v0] Audio panning set to: 1 for right ear, frequency: 8000Hz, volume: 0.03162277660168379
+[00:01:23.109] Browser LOG     [v0] Automatically sending test results email...
+[00:01:23.110] Browser LOG     [v0] Automatically sending test results email...
+[00:01:23.646] Server  ERROR   [v0] RESEND_API_KEY environment variable is not set
+[00:01:23.663] Server  ERROR   [v0] RESEND_API_KEY environment variable is not set
+[00:01:23.767] Browser ERROR   [v0] Error sending results: {}
+[00:01:23.767] Browser ERROR   [v0] Error sending results: {}
+[00:04:05.577] Server  WARN    ⚠ Cross origin request detected from 192.168.1.11 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins

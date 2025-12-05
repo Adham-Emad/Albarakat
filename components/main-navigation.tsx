@@ -68,7 +68,7 @@ export function MainNavigation() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto max-w-7xl flex h-16 items-center gap-2 px-4">
         <Link href="/" className="flex items-center gap-2 group flex-shrink-0">
-          <div className="relative h-32 w-32 transition-transform duration-300 group-hover:scale-110">
+          <div className="relative h-34 w-55 transition-transform duration-300 group-hover:scale-110">
             <Image
               src="/images/albarakal-logo (1).png"
               alt="Al-Barakat Hearing Care Center Logo"
@@ -78,7 +78,7 @@ export function MainNavigation() {
             />
           </div>
           <span className="text-xs font-semibold sm:text-sm md:text-base whitespace-nowrap">
-            <EditableText contentKey="nav.brandName" defaultValue="Al-Barakat Hearing Care" as="span" />
+            <EditableText contentKey="nav.brandName" defaultValue="" as="span" />
           </span>
         </Link>
 

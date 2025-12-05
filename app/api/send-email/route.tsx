@@ -1,4 +1,5 @@
-export const dynamic = "force-dynamic"; // prevents Next.js from running at build
+// Note: API routes don't work with static export
+// This file will be ignored during static build
 
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
@@ -90,21 +91,17 @@ export async function POST(request: Request) {
       `,
     });
 
-    console.log("[v0] Email sent successfully:", data);
+  console.log("[v0] Email sent successfully:", data);
 
-    return NextResponse.json({
-      success: true,
-      message: "Email sent successfully",
-      id: data.id,
-    });
-  } catch (error: any) {
+const emailId = (data as any)?.id ?? null;
+
+return NextResponse.json({
+  success: true,
+  message: "Email sent successfully",
+  id: emailId,
+});
+  } catch (error) {
     console.error("[v0] Error sending email:", error);
-    return NextResponse.json(
-      {
-        error: "Failed to send email",
-        details: error.message,
-      },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
   }
 }

@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
 import { Play, Pause, Volume2, Minus, Plus } from "lucide-react"
-import type { HearingTestQuestion } from "@/lib/hearing-test-data"
+import type { HearingTestQuestion } from "@/lib/types"
 import { ToneGenerator, speakText, stopSpeech } from "@/lib/audio-utils"
 
 interface HearingTestQuestionProps {
@@ -96,7 +96,7 @@ export function HearingTestQuestionComponent({
 
     try {
       if (question.type === "frequency" && question.frequency && toneGeneratorRef.current) {
-        const frequencyValue = Number.parseInt(question.frequency.replace(/[^0-9]/g, ""))
+        const frequencyValue = Number.parseInt(String(question.frequency).replace(/[^0-9]/g, ""))
         await toneGeneratorRef.current.playTone(frequencyValue, 2000)
       } else if (question.type === "speech" || question.type === "noise") {
         const wordToSpeak = question.options[question.correctAnswer]

@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/hearing-health/layout,_N_T_/hearing-health/hearing-loss/layout,_N_T_/hearing-health/hearing-loss/page,_N_T_/hearing-health/hearing-loss"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/hearing-health/hearing-loss/__PAGE__",
+    "/hearing-health/hearing-loss",
+    "/hearing-health",
+    "/_index",
+    "/_head"
+  ]
+}

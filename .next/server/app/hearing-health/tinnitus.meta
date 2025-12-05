@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/hearing-health/layout,_N_T_/hearing-health/tinnitus/layout,_N_T_/hearing-health/tinnitus/page,_N_T_/hearing-health/tinnitus"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/hearing-health/tinnitus/__PAGE__",
+    "/hearing-health/tinnitus",
+    "/hearing-health",
+    "/_index",
+    "/_head"
+  ]
+}

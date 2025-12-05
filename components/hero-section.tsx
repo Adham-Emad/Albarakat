@@ -38,30 +38,27 @@ export function HeroSection({ content, isAdmin, onEdit }: HeroSectionProps) {
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-6 lg:space-y-8">
           <EditableText
-            value={content.title}
-            onChange={(value) => onEdit?.("title", value)}
-            isAdmin={isAdmin}
+            contentKey="hero.title"
+            defaultValue={content.title}
+            as="h1"
             className="text-4xl md:text-5xl lg:text-7xl font-bold text-foreground text-balance"
-            placeholder="Enter hero title"
           />
 
           <EditableText
-            value={content.subtitle}
-            onChange={(value) => onEdit?.("subtitle", value)}
-            isAdmin={isAdmin}
+            contentKey="hero.subtitle"
+            defaultValue={content.subtitle}
+            as="p"
             className="text-lg md:text-xl lg:text-2xl text-muted-foreground text-balance"
             multiline
-            placeholder="Enter hero subtitle"
           />
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             <Button size="lg" className="text-base lg:text-lg px-8 group" onClick={scrollToProducts}>
               <EditableText
-                value={content.cta}
-                onChange={(value) => onEdit?.("cta", value)}
-                isAdmin={isAdmin}
+                contentKey="hero.cta"
+                defaultValue={content.cta}
+                as="span"
                 className="text-primary-foreground"
-                placeholder="CTA text"
               />
               <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>

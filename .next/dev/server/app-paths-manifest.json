@@ -1,0 +1,5 @@
+{
+  "/api/send-hearing-test-results/route": "app/api/send-hearing-test-results/route.js",
+  "/hearing-test/page": "app/hearing-test/page.js",
+  "/page": "app/page.js"
+}

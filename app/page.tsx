@@ -1,12 +1,12 @@
 "use client"
-
+import Image from "next/image"
+import Link from "next/link"
 import { MainNavigation } from "@/components/main-navigation"
 import { HeroVideoSection } from "@/components/hero-video-section"
 import { HearingNewsCarousel } from "@/components/hearing-news-carousel"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { EditableText } from "@/components/editable-text"
-import Link from "next/link"
 import { Ear, Heart, Shield, Users, ArrowRight, CheckCircle2 } from "lucide-react"
 import { productCategories, brands } from "@/lib/hearing-data"
 import { getStoredProducts, getSiteContent, getStoredBrands, addBrand, deleteBrand } from "@/lib/content-store"
@@ -344,22 +344,36 @@ export default function HomePage() {
       {/* Hearing News Carousel */}
       <HearingNewsCarousel />
 
+      
+      {/* Footer */}
       <footer className="border-t bg-background py-12">
         <div className="container mx-auto max-w-7xl px-4">
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            <div>
-              <h3 className="mb-4 text-lg font-semibold">
-                <EditableText contentKey="footer.companyName" defaultValue="Al-Barakat Hearing Care" as="span" />
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                <EditableText
-                  contentKey="footer.companyDescription"
-                  defaultValue="Your trusted partner in hearing health and wellness"
-                  as="span"
-                  multiline
-                />
-              </p>
+          
+          {/* 1. Grid Container: تم إضافة items-start لضمان محاذاة كل الأعمدة للأعلى */}
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 items-start"> 
+
+            {/* ⬅️ العمود الأول: الشعار والنص الوصفي */}
+<div>
+    {/* 👈 عنوان وهمي (Invisible) لفرض محاذاة الشعار للأعلى، بنفس ارتفاع عناوين الأعمدة الأخرى */}
+    <h4 className="mb-4 text-sm font-semibold invisible">
+        <EditableText contentKey="footer.placeholderTitle" defaultValue="Placeholder" as="span" />
+    </h4>
+
+    {/* حجم الشعار: h-64 w-64 كما طلبت */}
+    <div className="relative h-20 w-60  mb-1 mr-4 ">
+        <Image
+            src="/images/albarakal-logo (1).png"
+            alt="Al-Barakat Hearing Care Center Logo"
+            fill
+            className="object-contain"
+        />
+    </div>
+              
+              {/* النص الوصفي */}
+              
             </div>
+
+            {/* العمود الثاني: Quick Links */}
             <div>
               <h4 className="mb-4 text-sm font-semibold">
                 <EditableText contentKey="footer.quickLinksTitle" defaultValue="Quick Links" as="span" />
@@ -399,6 +413,8 @@ export default function HomePage() {
                 </li>
               </ul>
             </div>
+            
+            {/* العمود الثالث: Resources */}
             <div>
               <h4 className="mb-4 text-sm font-semibold">
                 <EditableText contentKey="footer.resourcesTitle" defaultValue="Resources" as="span" />
@@ -438,6 +454,8 @@ export default function HomePage() {
                 </li>
               </ul>
             </div>
+            
+            {/* العمود الرابع: Contact */}
             <div>
               <h4 className="mb-4 text-sm font-semibold">
                 <EditableText contentKey="footer.contactTitle" defaultValue="Contact" as="span" />
@@ -449,6 +467,8 @@ export default function HomePage() {
               </ul>
             </div>
           </div>
+          
+          {/* قسم حقوق الطبع والنشر */}
           <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
             <p>
               <EditableText

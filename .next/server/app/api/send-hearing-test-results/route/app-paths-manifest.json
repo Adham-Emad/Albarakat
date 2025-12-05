@@ -1,0 +1,3 @@
+{
+  "/api/send-hearing-test-results/route": "app/api/send-hearing-test-results/route.js"
+}

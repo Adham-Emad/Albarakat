@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/products/layout,_N_T_/products/hearing-aid-brands/layout,_N_T_/products/hearing-aid-brands/rexton/layout,_N_T_/products/hearing-aid-brands/rexton/bi-core-b/layout,_N_T_/products/hearing-aid-brands/rexton/bi-core-b/page,_N_T_/products/hearing-aid-brands/rexton/bi-core-b"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/products/hearing-aid-brands/rexton/bi-core-b/__PAGE__",
+    "/products/hearing-aid-brands/rexton/bi-core-b",
+    "/products/hearing-aid-brands/rexton",
+    "/products/hearing-aid-brands",
+    "/products",
+    "/_index",
+    "/_head"
+  ]
+}

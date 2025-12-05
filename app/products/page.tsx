@@ -1,5 +1,7 @@
 "use client"
-
+import Image from "next/image"
+ 
+ 
 import { MainNavigation } from "@/components/main-navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -305,101 +307,120 @@ export default function ProductsPage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t bg-background py-12">
-        <div className="container mx-auto max-w-7xl px-4">
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            <div>
-              <h3 className="mb-4 text-lg font-semibold">Al-Barakat Hearing Care</h3>
-              <p className="text-sm text-muted-foreground">Your trusted partner in hearing health and wellness.</p>
-            </div>
-            <div>
-              <h4 className="mb-4 text-sm font-semibold">Quick Links</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link
-                    href="/about"
-                    className="text-muted-foreground hover:text-foreground transition-colors duration-300"
-                  >
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/services"
-                    className="text-muted-foreground hover:text-foreground transition-colors duration-300"
-                  >
-                    Services
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/products"
-                    className="text-muted-foreground hover:text-foreground transition-colors duration-300"
-                  >
-                    Products
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/contact"
-                    className="text-muted-foreground hover:text-foreground transition-colors duration-300"
-                  >
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="mb-4 text-sm font-semibold">Resources</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link
-                    href="/hearing-test"
-                    className="text-muted-foreground hover:text-foreground transition-colors duration-300"
-                  >
-                    Hearing Test
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/hearing-health"
-                    className="text-muted-foreground hover:text-foreground transition-colors duration-300"
-                  >
-                    Hearing Health
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/faq"
-                    className="text-muted-foreground hover:text-foreground transition-colors duration-300"
-                  >
-                    FAQ
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/blog"
-                    className="text-muted-foreground hover:text-foreground transition-colors duration-300"
-                  >
-                    Blog
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="mb-4 text-sm font-semibold">Contact</h4>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>+20 1021454545</li>
-                <li>info@albarakat-hearing.com</li>
-                <li>Sun-Thu: 9AM-8PM</li>
-              </ul>
-            </div>
-          </div>
-          <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-            <p>&copy; 2025 Al-Barakat Hearing Care Centers. All rights reserved.</p>
-          </div>
+<footer className="border-t bg-background py-12">
+  <div className="container mx-auto max-w-7xl px-4">
+    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+
+      {/* ⬅️ العمود الأول: يحتوي الآن على الشعار والنص الوصفي */}
+      <div>
+        {/* div الشعار - يرجى التأكد من استيراد Image من 'next/image' في هذا الملف */}
+        <div className="relative h-24 w-24 mb-4">
+          <Image
+            src="/images/albarakal-logo (1).png"
+            alt="Al-Barakat Hearing Care Center Logo"
+            fill
+            className="object-contain"
+            // لا حاجة لـ priority هنا في التذييل
+          />
         </div>
-      </footer>
+        <p className="text-sm text-muted-foreground">Your trusted partner in hearing health and wellness.</p>
+      </div>
+
+      {/* العمود الثاني: Quick Links */}
+      <div>
+        <h4 className="mb-4 text-sm font-semibold">Quick Links</h4>
+        <ul className="space-y-2 text-sm">
+          <li>
+            <Link
+              href="/about"
+              className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+            >
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/services"
+              className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+            >
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/products"
+              className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+            >
+              Products
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/contact"
+              className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
+      
+      {/* العمود الثالث: Resources */}
+      <div>
+        <h4 className="mb-4 text-sm font-semibold">Resources</h4>
+        <ul className="space-y-2 text-sm">
+          <li>
+            <Link
+              href="/hearing-test"
+              className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+            >
+              Hearing Test
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/hearing-health"
+              className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+            >
+              Hearing Health
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/faq"
+              className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+            >
+              FAQ
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/blog"
+              className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+            >
+              Blog
+            </Link>
+          </li>
+        </ul>
+      </div>
+      
+      {/* العمود الرابع: Contact */}
+      <div>
+        <h4 className="mb-4 text-sm font-semibold">Contact</h4>
+        <ul className="space-y-2 text-sm text-muted-foreground">
+          <li>+20 1021454545</li>
+          <li>info@albarakat-hearing.com</li>
+          <li>Sun-Thu: 9AM-8PM</li>
+        </ul>
+      </div>
+    </div>
+    
+    {/* قسم حقوق الطبع والنشر */}
+    <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
+      <p>&copy; 2025 Al-Barakat Hearing Care Centers. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
     </div>
   )
 }

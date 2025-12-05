@@ -1,9 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // هذا السطر الذي أضفناه لتصدير الملفات الثابتة
+  // Your existing configuration
   output: 'export', 
-  // ... باقي الإعدادات الأخرى التي لديك
-};
+  
+  // ADD THIS BLOCK to disable Image Optimization
+  images: {
+    unoptimized: true,
+  },
+}
 
-// هذا هو التعديل المطلوب:
-export default nextConfig;
+export default nextConfig

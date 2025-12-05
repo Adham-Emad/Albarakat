@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/products/layout,_N_T_/products/hearing-aid-technology/layout,_N_T_/products/hearing-aid-technology/integrated-xperience/layout,_N_T_/products/hearing-aid-technology/integrated-xperience/page,_N_T_/products/hearing-aid-technology/integrated-xperience"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/products/hearing-aid-technology/integrated-xperience/__PAGE__",
+    "/products/hearing-aid-technology/integrated-xperience",
+    "/products/hearing-aid-technology",
+    "/products",
+    "/_index",
+    "/_head"
+  ]
+}

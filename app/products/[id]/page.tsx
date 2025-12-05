@@ -10,8 +10,15 @@ import { getStoredProducts } from "@/lib/content-store"
 import { notFound } from "next/navigation"
 import { ProductImageViewer } from "@/components/product-image-viewer"
 
-// FIX: Force dynamic rendering to prevent SSR issues related to data or environment
-export const dynamic = "force-dynamic"
+// Note: Static export mode - dynamic rendering not available
+
+export function generateStaticParams() {
+  // Generate static params for all products from hearing-data
+  // Note: Stored products (from localStorage) won't be included in static generation
+  return products.map((product) => ({
+    id: product.id,
+  }))
+}
 
 export default function ProductDetailPage({ params }: { params: { id: string } }) {
   const storedProducts = getStoredProducts()

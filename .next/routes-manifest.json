@@ -1,1 +1,299 @@
-{"version":3,"caseSensitive":false,"basePath":"","rewrites":{"beforeFiles":[],"afterFiles":[],"fallback":[]},"redirects":[{"source":"/:path+/","destination":"/:path+","permanent":true,"internal":true,"regex":"^(?:\\/((?:[^\\/]+?)(?:\\/(?:[^\\/]+?))*))\\/$"}],"headers":[]}
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/products/[id]",
+      "regex": "^/products/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/products/(?<nxtPid>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/about",
+      "regex": "^/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about(?:/)?$"
+    },
+    {
+      "page": "/admin",
+      "regex": "^/admin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin(?:/)?$"
+    },
+    {
+      "page": "/admin/brands",
+      "regex": "^/admin/brands(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/brands(?:/)?$"
+    },
+    {
+      "page": "/admin/products",
+      "regex": "^/admin/products(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/products(?:/)?$"
+    },
+    {
+      "page": "/admin/settings",
+      "regex": "^/admin/settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/settings(?:/)?$"
+    },
+    {
+      "page": "/api/send-email",
+      "regex": "^/api/send\\-email(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/send\\-email(?:/)?$"
+    },
+    {
+      "page": "/api/send-hearing-test-results",
+      "regex": "^/api/send\\-hearing\\-test\\-results(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/send\\-hearing\\-test\\-results(?:/)?$"
+    },
+    {
+      "page": "/blog",
+      "regex": "^/blog(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/blog(?:/)?$"
+    },
+    {
+      "page": "/booking",
+      "regex": "^/booking(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/booking(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/faq",
+      "regex": "^/faq(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/faq(?:/)?$"
+    },
+    {
+      "page": "/hearing-health",
+      "regex": "^/hearing\\-health(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/hearing\\-health(?:/)?$"
+    },
+    {
+      "page": "/hearing-health/hearing-loss",
+      "regex": "^/hearing\\-health/hearing\\-loss(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/hearing\\-health/hearing\\-loss(?:/)?$"
+    },
+    {
+      "page": "/hearing-health/how-we-hear",
+      "regex": "^/hearing\\-health/how\\-we\\-hear(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/hearing\\-health/how\\-we\\-hear(?:/)?$"
+    },
+    {
+      "page": "/hearing-health/prevention",
+      "regex": "^/hearing\\-health/prevention(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/hearing\\-health/prevention(?:/)?$"
+    },
+    {
+      "page": "/hearing-health/tinnitus",
+      "regex": "^/hearing\\-health/tinnitus(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/hearing\\-health/tinnitus(?:/)?$"
+    },
+    {
+      "page": "/hearing-test",
+      "regex": "^/hearing\\-test(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/hearing\\-test(?:/)?$"
+    },
+    {
+      "page": "/products",
+      "regex": "^/products(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products(?:/)?$"
+    },
+    {
+      "page": "/products/accessories-batteries",
+      "regex": "^/products/accessories\\-batteries(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/accessories\\-batteries(?:/)?$"
+    },
+    {
+      "page": "/products/category",
+      "regex": "^/products/category(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/category(?:/)?$"
+    },
+    {
+      "page": "/products/hearing-aid-brands",
+      "regex": "^/products/hearing\\-aid\\-brands(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/hearing\\-aid\\-brands(?:/)?$"
+    },
+    {
+      "page": "/products/hearing-aid-brands/rexton",
+      "regex": "^/products/hearing\\-aid\\-brands/rexton(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/hearing\\-aid\\-brands/rexton(?:/)?$"
+    },
+    {
+      "page": "/products/hearing-aid-brands/rexton/bi-core-b",
+      "regex": "^/products/hearing\\-aid\\-brands/rexton/bi\\-core\\-b(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/hearing\\-aid\\-brands/rexton/bi\\-core\\-b(?:/)?$"
+    },
+    {
+      "page": "/products/hearing-aid-brands/rexton/bi-core-ric",
+      "regex": "^/products/hearing\\-aid\\-brands/rexton/bi\\-core\\-ric(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/hearing\\-aid\\-brands/rexton/bi\\-core\\-ric(?:/)?$"
+    },
+    {
+      "page": "/products/hearing-aid-brands/rexton/bi-core-rugged",
+      "regex": "^/products/hearing\\-aid\\-brands/rexton/bi\\-core\\-rugged(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/hearing\\-aid\\-brands/rexton/bi\\-core\\-rugged(?:/)?$"
+    },
+    {
+      "page": "/products/hearing-aid-brands/signia",
+      "regex": "^/products/hearing\\-aid\\-brands/signia(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/hearing\\-aid\\-brands/signia(?:/)?$"
+    },
+    {
+      "page": "/products/hearing-aid-brands/signia/insio-custom",
+      "regex": "^/products/hearing\\-aid\\-brands/signia/insio\\-custom(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/hearing\\-aid\\-brands/signia/insio\\-custom(?:/)?$"
+    },
+    {
+      "page": "/products/hearing-aid-brands/signia/motion",
+      "regex": "^/products/hearing\\-aid\\-brands/signia/motion(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/hearing\\-aid\\-brands/signia/motion(?:/)?$"
+    },
+    {
+      "page": "/products/hearing-aid-brands/signia/pure-ric",
+      "regex": "^/products/hearing\\-aid\\-brands/signia/pure\\-ric(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/hearing\\-aid\\-brands/signia/pure\\-ric(?:/)?$"
+    },
+    {
+      "page": "/products/hearing-aid-brands/signia/silk",
+      "regex": "^/products/hearing\\-aid\\-brands/signia/silk(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/hearing\\-aid\\-brands/signia/silk(?:/)?$"
+    },
+    {
+      "page": "/products/hearing-aid-brands/signia/styletto-slim-ric",
+      "regex": "^/products/hearing\\-aid\\-brands/signia/styletto\\-slim\\-ric(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/hearing\\-aid\\-brands/signia/styletto\\-slim\\-ric(?:/)?$"
+    },
+    {
+      "page": "/products/hearing-aid-technology",
+      "regex": "^/products/hearing\\-aid\\-technology(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/hearing\\-aid\\-technology(?:/)?$"
+    },
+    {
+      "page": "/products/hearing-aid-technology/augment-xperience",
+      "regex": "^/products/hearing\\-aid\\-technology/augment\\-xperience(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/hearing\\-aid\\-technology/augment\\-xperience(?:/)?$"
+    },
+    {
+      "page": "/products/hearing-aid-technology/bi-core-technology",
+      "regex": "^/products/hearing\\-aid\\-technology/bi\\-core\\-technology(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/hearing\\-aid\\-technology/bi\\-core\\-technology(?:/)?$"
+    },
+    {
+      "page": "/products/hearing-aid-technology/integrated-xperience",
+      "regex": "^/products/hearing\\-aid\\-technology/integrated\\-xperience(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/hearing\\-aid\\-technology/integrated\\-xperience(?:/)?$"
+    },
+    {
+      "page": "/products/hearing-aid-technology/reach-technology",
+      "regex": "^/products/hearing\\-aid\\-technology/reach\\-technology(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/hearing\\-aid\\-technology/reach\\-technology(?:/)?$"
+    },
+    {
+      "page": "/products/tinnitus-solutions",
+      "regex": "^/products/tinnitus\\-solutions(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/tinnitus\\-solutions(?:/)?$"
+    },
+    {
+      "page": "/services",
+      "regex": "^/services(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

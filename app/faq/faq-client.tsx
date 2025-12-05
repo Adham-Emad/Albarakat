@@ -323,4 +323,5 @@ export default function FAQClientPage() {
       </section>
     </div>
   )
+  
 }

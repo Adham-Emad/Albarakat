@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/products/layout,_N_T_/products/hearing-aid-brands/layout,_N_T_/products/hearing-aid-brands/signia/layout,_N_T_/products/hearing-aid-brands/signia/pure-ric/layout,_N_T_/products/hearing-aid-brands/signia/pure-ric/page,_N_T_/products/hearing-aid-brands/signia/pure-ric"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/products/hearing-aid-brands/signia/pure-ric/__PAGE__",
+    "/products/hearing-aid-brands/signia/pure-ric",
+    "/products/hearing-aid-brands/signia",
+    "/products/hearing-aid-brands",
+    "/products",
+    "/_index",
+    "/_head"
+  ]
+}

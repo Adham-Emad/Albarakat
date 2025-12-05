@@ -43,19 +43,17 @@ export function ProductsSection({
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-12 lg:mb-16">
           <EditableText
-            value={content.title}
-            onChange={(value) => onEditContent?.("title", value)}
-            isAdmin={isAdmin}
+            contentKey="products.title"
+            defaultValue={content.title}
+            as="h2"
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance"
-            placeholder="Products section title"
           />
           <EditableText
-            value={content.subtitle}
-            onChange={(value) => onEditContent?.("subtitle", value)}
-            isAdmin={isAdmin}
+            contentKey="products.subtitle"
+            defaultValue={content.subtitle}
+            as="p"
             className="text-lg text-muted-foreground max-w-2xl mx-auto text-balance"
             multiline
-            placeholder="Products section subtitle"
           />
         </div>
 

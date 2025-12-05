@@ -61,6 +61,10 @@ export interface HearingTestQuestion {
   audioUrl?: string
   options: string[]
   correctAnswer: number
+  type?: "frequency" | "speech" | "noise"
+  frequency?: number | string
+  instruction?: string
+  ear?: "left" | "right"
 }
 
 export interface HearingTestResult {

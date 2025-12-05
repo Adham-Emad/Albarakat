@@ -18,20 +18,18 @@ export function AboutSection({ content, isAdmin, onEdit }: AboutSectionProps) {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-12 lg:mb-16">
           <EditableText
-            value={content.title}
-            onChange={(value) => onEdit?.("title", value)}
-            isAdmin={isAdmin}
+            contentKey="about.title"
+            defaultValue={content.title}
+            as="h2"
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance"
-            placeholder="Section title"
           />
 
           <EditableText
-            value={content.description}
-            onChange={(value) => onEdit?.("description", value)}
-            isAdmin={isAdmin}
+            contentKey="about.description"
+            defaultValue={content.description}
+            as="p"
             className="text-lg text-muted-foreground text-balance"
             multiline
-            placeholder="Section description"
           />
         </div>
 
@@ -44,19 +42,17 @@ export function AboutSection({ content, isAdmin, onEdit }: AboutSectionProps) {
                   <Icon className="w-8 h-8 text-primary" />
                 </div>
                 <EditableText
-                  value={feature.title}
-                  onChange={(value) => onEdit?.(`features.${index}.title`, value)}
-                  isAdmin={isAdmin}
+                  contentKey={`about.features.${index}.title`}
+                  defaultValue={feature.title}
+                  as="h3"
                   className="text-xl font-semibold mb-2"
-                  placeholder="Feature title"
                 />
                 <EditableText
-                  value={feature.description}
-                  onChange={(value) => onEdit?.(`features.${index}.description`, value)}
-                  isAdmin={isAdmin}
+                  contentKey={`about.features.${index}.description`}
+                  defaultValue={feature.description}
+                  as="p"
                   className="text-sm text-muted-foreground"
                   multiline
-                  placeholder="Feature description"
                 />
               </div>
             )
