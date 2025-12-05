@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // يجب إضافة هذا السطر:
+  // هذا السطر الذي أضفناه لتصدير الملفات الثابتة
   output: 'export', 
-  // ... أي إعدادات أخرى لديك
+  // ... باقي الإعدادات الأخرى التي لديك
 };
 
-module.exports = nextConfig;
+// هذا هو التعديل المطلوب:
+export default nextConfig;
